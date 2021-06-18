@@ -1,0 +1,11 @@
+@media (max-width: 1000px) {
+  .example {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 420px) {
+}
