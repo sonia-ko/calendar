@@ -6,10 +6,11 @@
   td {
     border: none;
     padding: 1.5vh;
-
     font-size: 2.2vh;
   }
-
+  th {
+    background-color: #a9c0a6;
+  }
   .today {
     background-color: #a9c0a6;
     font-weight: bold;
