@@ -153,6 +153,12 @@ function switchMonths(param) {
   }
 }
 
+function removeHighligther() {
+  if (highlidtherEl) {
+    highlidtherEl.classList.remove("highlighted");
+  }
+}
+
 ////////////DOM events///////////////////
 
 btnOpenCalendar.addEventListener("click", function () {
@@ -173,7 +179,9 @@ container.addEventListener("click", function (e) {
     }
   } else if (e.target.classList.contains("arrow-next")) {
     switchMonths("next");
+    removeHighligther();
   } else if (e.target.classList.contains("arrow-back")) {
     switchMonths("prev");
+    removeHighligther();
   }
 });
