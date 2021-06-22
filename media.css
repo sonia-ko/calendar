@@ -1,6 +1,20 @@
 @media (max-width: 1000px) {
-  .example {
-    display: none;
+  table {
+    width: 90%;
+  }
+  th,
+  td {
+    border: none;
+    padding: 1.5vh;
+    background-color: #edca82;
+    font-size: 2.2vh;
+  }
+
+  .today {
+    background-color: #a9c0a6;
+    font-weight: bold;
+    font-size: 2vh;
+    padding: 0.6vh;
   }
 }
 
