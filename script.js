@@ -23,6 +23,8 @@ let searchingForTheFirstDay = true;
 let counter = 1;
 let newMonthCounter = 1;
 let previousMonthCounter = numberOfDaysInPrevMonth;
+const numberOfRows = 6;
+const numberOfColumns = 7;
 
 /////////// FUNCTIONS ///////////////////
 
@@ -49,11 +51,11 @@ function generateCalendarHeader() {
 }
 
 function generateCalendarDates() {
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < numberOfRows; i++) {
     const row = document.createElement("tr");
     document.querySelector("table").appendChild(row);
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < numberOfColumns; i++) {
       let td = document.createElement("td");
       td.classList.add(`day-${i}`);
       row.appendChild(td);
